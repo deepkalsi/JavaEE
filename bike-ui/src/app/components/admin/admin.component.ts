@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import {BikeService} from '../../services/bike.service';
 
 @Component({
@@ -8,24 +7,22 @@ import {BikeService} from '../../services/bike.service';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
-
+  // tslint:disable-next-line:ban-types
+  // @ts-ignore
   public bikes;
-
-
   constructor(private bikeService: BikeService) { }
 
-  ngOnInit() {
-
+  ngOnInit(): void {
     this.getBikes();
   }
 
-  getBikes(){
-  this.bikeService.getBikes().subscribe(
-    data =>{this.bikes =data},
-    err => console.error(err),
-    ()=> console.log('bikes loaded')
-  )
-  
-}
-
+  getBikes(): any {
+    this.bikeService.getBikes().subscribe(
+      data => {
+        this.bikes = data;
+      },
+      err => console.error(err),
+      () => console.log('bikes loaded')
+    );
+  }
 }
