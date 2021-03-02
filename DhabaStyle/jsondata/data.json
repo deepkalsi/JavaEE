@@ -1,0 +1,19 @@
+[ { "cousine":"Indian", "dishes": [
+  {"name": "Tikki","cost": "20", "desc": "Allu tiki fried with spices","photo": "images/tikki.jpg"},
+  {"name": "Saag","cost": "10", "desc": "Green food cooked with pure organic vegetables and spices"},
+  {"name": "Paneer","cost": "30", "desc": "Cottage cheese blend of spcies"}
+]},
+  {
+    "cousine":"Canadian", "dishes": [
+    {"name": "Pizza","cost": "20", "desc": "100% beef canadian pizza"},
+    {"name": "Beer","cost": "30", "desc": "Local craft beer", "photo": "images/beer.jpg"},
+    {"name": "Poutine","cost": "20", "desc": "Delicious fries"}
+  ]},
+
+  {
+    "cousine":"Mexican", "dishes":   [
+    {"name": "Taco","cost": "10", "desc": "Healthy bean tacos"},
+    {"name": "Burrito","cost": "20", "desc": "Whole wheat pita and rice"},
+    {"name": "Bowl","cost": "50", "desc": "Beans, vegetables and souces","photo": "images/bowl.jpg"}
+  ]}
+]
