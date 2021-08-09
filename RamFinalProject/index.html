@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jewellery Di Dukaan</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lato:300,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div id="headerWrapper">
+    <header>
+        <h1>Jewellery Di Dukaan</h1>
+        <h2>All you can shop for latest trends</h2>
+        <h3><a href="tel:123456789">1-123-456-7891</a></h3>
+    </header>
+</div>
+
+
+
+
+<div id="navWrapper">
+    <nav>
+        <button href="index.html#details" onclick="display(0)">Rings</button>
+        <button href="index.html#details" onclick="display(1)">Necklace</button>
+        <button href="index.html#details" onclick="display(2)">Ear Rings</button>
+        <button href="index.html#details" onclick="display(3)">Ancklets</button>
+    </nav>
+    <div class="keepOpen"></div>
+</div>
+
+<main>
+    <h1 id="jewelleryName">Rings</h1>
+    <p id="desc">Beautiful Rings for Beautiful hands</p>
+    <figure class="photo"><img id="photo" src="images/placeholder.jpg" alt="ring photo"></figure>
+
+    <section>
+        <h2>Items</h2>
+        <p>Type <span id="type">Couple rings</span></p>
+
+    </section>
+
+    <section>
+        <h2>Cost</h2>
+        <p>Special <span id="cost">$100.00</span></p>
+
+    </section>
+
+    <section>
+        <h2>Descriptions</h2>
+        <div id="details">
+            Specially hand made rings
+            <a class="reserve" href="#">Order Now</a>
+        </div>
+    </section>
+
+
+    <div class="keepOpen"></div>
+</main>
+<div id="footerWrapper">
+    <footer><p>&copy Jewellery project&bull;</p></footer>
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
