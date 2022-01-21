@@ -1,0 +1,16 @@
+[
+  {"type": "Ring", "items": [
+    {"name": "Solitary", "cost": "120", "desc": "Perfect ring for special occasion", "photo": "images/solring.jpg"}
+]},
+  {"type": "Necklace", "items": [
+    {"name": "Haar", "cost": "200", "desc": "Perfect for a bride", "photo": "images/necklace.jpg"}
+  ]},
+
+  {"type": "EarRings", "items": [
+    {"name": "Jhumke", "cost": "400", "desc": "Light up your face", "photo": "images/earring.jpg"}
+  ]},
+
+  {"type": "Ancklets", "items": [
+    {"name": "Jhanjar", "cost": "500", "desc": "Shiny pairs", "photo": "images/anckle.jpg"}
+  ]}
+]'

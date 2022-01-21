@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function fetchPokemonData(pokemon){
+            let url = pokemon.url // <--- this is saving the pokemon url to a      variable to us in a fetch.(Ex: https://pokeapi.co/api/v2/pokemon/1/)
+            fetch(url)
+                .then(response => response.json())
+                .then(function(pokeData){
+                    console.log(pokeData)
+                })
+        }
+
+        $(function(){
+            var $select = $(".1-893");
+            for (i=1;i<=893;i++){
+                $select.append($('<option></option>').val(i).html(i))
+            }
+        });
+
+        var pokeSpecs = new XMLHttpRequest();
+
+        var cObj;
+
+        pokeSpecs.open('GET', 'http://api.openweathermap.org/data/2.5/weather?q=London&appid=aa9fe7a79d7e8bd72ec6da618b3364a8&units=metric', true);
+        pokeSpecs.responseType = 'text';
+        pokeSpecs.send(null);
+
+        pokeSpecs.onload = function() {
+            if (pokeSpecs.status === 200){
+                cObj = JSON.parse(pokeSpecs.responseText);
+                console.log(cObj);
+                document.getElementById('type').innerHTML=cObj.name;
+                document.getElementById('weight').innerHTML=cObj.weather[0].description;
+                document.getElementById('height').innerHTML=cObj.main.temp;
+
+
+
+            } //end if
+        }; //end function
+
+
+
+        var e = document.getElementById("pk");
+        var strUser = e.value;
+        console.log(strUser)
+
+    </script>
+</head>
+<body>
+
+<h1>PokeMon Search API</h1>
+
+<form action="#" method="post" id="demoForm" class="demoForm">
+    <p>
+                <select id="pk" class="1-893"></select>
+        </p>
+
+        <p>
+            <input type="button" id="showVal" value="Value Property" />
+            <input type="button" id="showTxt" value="selectedIndex/Text" />
+
+        </p>
+
+</form>
+</br>
+
+<p>Pokemon Specs</p>
+<section id="left">
+    <div id="type">Type</div>
+    <div id="weight">Weight</div>
+    <div id="height">Height</div>
+</section>
+
+<img src="url" alt="alternatetext" width="500" height="600">
+
+
+
+</body>
+</html>
+
+
+
+
+

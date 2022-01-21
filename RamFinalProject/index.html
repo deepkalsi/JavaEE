@@ -1,71 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Jewellery Di Dukaan</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Alex+Brush|Lato:300,700" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-
+    <meta charset="utf-8">
+    <title>Ram's Jewel</title>
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-<div id="headerWrapper">
-    <header>
-        <h1>Jewellery Di Dukaan</h1>
-        <h2>All you can shop for latest trends</h2>
-        <h3><a href="tel:123456789">1-123-456-7891</a></h3>
-    </header>
-</div>
-
-
-
-
-<div id="navWrapper">
-    <nav>
-        <button href="index.html#details" onclick="display(0)">Rings</button>
-        <button href="index.html#details" onclick="display(1)">Necklace</button>
-        <button href="index.html#details" onclick="display(2)">Ear Rings</button>
-        <button href="index.html#details" onclick="display(3)">Ancklets</button>
-    </nav>
-    <div class="keepOpen"></div>
-</div>
-
-<main>
-    <h1 id="jewelleryName">Rings</h1>
-    <p id="desc">Beautiful Rings for Beautiful hands</p>
-    <figure class="photo"><img id="photo" src="images/placeholder.jpg" alt="ring photo"></figure>
-
-    <section>
-        <h2>Items</h2>
-        <p>Type <span id="type">Couple rings</span></p>
-
-    </section>
-
-    <section>
-        <h2>Cost</h2>
-        <p>Special <span id="cost">$100.00</span></p>
-
-    </section>
-
-    <section>
-        <h2>Descriptions</h2>
-        <div id="details">
-            Specially hand made rings
-            <a class="reserve" href="#">Order Now</a>
+<!-- HEADER -->
+<header id="main-header">
+    <div class="container">
+        <div class="row end-sm end-md end-lg center-xs middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                <h1><span class="primary-text">Ram's</span>Jewel</h1>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+                <nav id="navbar">
+                    <ul>
+                        <li class="current"><a href="index.html">Home</a></li>
+                        <li><a href="gallary.html">Gallary</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-    </section>
+    </div>
+</header>
+
+<!-- SHOWCASE -->
+<section id="showcase">
+    <div class="container">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 showcase-content">
+                <h1>Welcome to <span class="primary-text">JewelStore</span></h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+    <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Our Featured items</h2>
+                <p>What's Included</p>
+                <!-- ICON ROW 1 -->
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image1-small.jpg" width="330" height="250"></a>
+                        <h4>Necklace</h4>
+                        <p>Top quality for your neck</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image14-small.jpg" width="330" height="250"></a>
+                        <h4>Rings</h4>
+                        <p>Beautiful rings for hands</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image2-small.jpg" width="330" height="250"></a>
+                        <h4>Ear Rings</h4>
+                        <p>Stone ear rings</p>
+                    </div>
+                </div>
+
+                <!-- ICON ROW 2 -->
+                <div class="row center-xs center-sm center-md center-lg">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image18-small.jpg" width="330" height="250"></a>
+                        <h4>Bridal</h4>
+                        <p>Specially designed for brides</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image19-small.jpg" width="330" height="250"></a>
+                        <h4>Groom</h4>
+                        <p>Specially designed for grooms</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <img src="Images/image20-small.jpg" width="330" height="250"></a>
+                        <h4>Kids</h4>
+                        <p>Kids specials available on request</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
-    <div class="keepOpen"></div>
-</main>
-<div id="footerWrapper">
-    <footer><p>&copy Jewellery project&bull;</p></footer>
-</div>
 
+<!-- COMPANY -->
+<section id="company">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fa fa-phone"></i>  0101010101</li>
+                    <li><i class="fa fa-envelope"></i> Ramsing@email.com</li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                <h4>About Us</h4>
+                <p>Just a Beginer</p>
+            </div>
 
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="main-footer">
+    <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <p>JewelStore Project</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
-<script type="text/javascript" src="js/main.js"></script>
 </html>
