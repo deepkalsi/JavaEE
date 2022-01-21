@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
+- var texts = ['G', 'o', 'o', 'd', 'M', 'o', 'r', 'n','i','n','g','M','A','R','I',': )'];
+- var number_of_particle = 16;
 
-<h1>Hi ALL</h1>
+- for (var i = 0; i < texts.length; i++)
+  .background(class="background" + i)
+.criterion
+  - for (var i = 0; i < texts.length; i++)
+    .text(class='text' + i) #{texts[i]}
+  - for (var i = 0; i < texts.length; i++)
+    .frame(class='frame' + i)
+  - for (var i = 0; i < texts.length; i++)
+    - for (var j = 0; j < number_of_particle; j++)
+      .particle(class="particle" + i + j)
  
 
 
